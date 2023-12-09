@@ -30,7 +30,7 @@ Formula for Chinese Zodiac caluclation: (year - 4) % 12. Possible values:
 let inputText = prompt("Write the year you were born in");
 console.log(inputText);
 let numberInput = parseInt(inputText);
-let result = (inputText - 4) % 12;
+let result = (numberInput - 4) % 12;
 console.log(result);
 let resultN = parseInt(result);
 
@@ -80,7 +80,7 @@ else if (numberN > 0) { console.log("Positive number"); }
 
 6. /*Write a program that will accept user input between 1-7 (week number) and print week day.*/
 
-let inputNumber = prompt("Write numbers between 1 and 7");
+let inputNumber = prompt("Write week number (1-7)");
 console.log(inputNumber);
 let dayNumber = parseInt(inputNumber);
 
@@ -98,8 +98,8 @@ else if (dayNumber != [1, 2, 3, 4, 5, 6, 7]) { console.log("Entered wrong number
 let inputNom = prompt("Number input");
 console.log(input, typeof input);
 let inputN = parseInt(inputNom);
-if (input == inputN) { console.log("Your input is number"); }
-if (input != inputN) { console.log("Your input is not a nuber"); }
+if (inputNom == inputN) { console.log("Your input is number"); }
+if (inputNom != inputN) { console.log("Your input is not a nuber"); }
 
 
 
