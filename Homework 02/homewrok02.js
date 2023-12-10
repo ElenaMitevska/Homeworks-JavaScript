@@ -126,13 +126,14 @@ let averageGradeN = parseInt(averageGrade);
 let averageGradePercent = (averageGradeN / 5) * 100;
 console.log(averageGradePercent);
 let averageGradePercentN = parseInt(averageGradePercent);
-if (averageGradePercentN >= 100) { console.log("Your grade is A"); }
+if (averageGradePercentN > 100) { console.log("Try again"); }
+else if (averageGradePercentN >= 90) { console.log("Your grade is A"); }
 else if (averageGradePercentN >= 80) { console.log("Your grade is B"); }
 else if (averageGradePercentN >= 70) { console.log("Your grade is C"); }
 else if (averageGradePercentN >= 60) { console.log("Your grade is D"); }
 else if (averageGradePercentN >= 40) { console.log("Your grade is E"); }
 else if (averageGradePercentN < 40) { console.log("Your grade is F"); }
-else { console.log("Try again"); }
+else { console.log("Error"); }
 
 
 
