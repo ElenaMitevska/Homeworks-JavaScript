@@ -19,3 +19,5 @@ for (let i = 1; i <= 5; i++) {
 
 let result = document.querySelector("#result")
 result.innerText = `The sum of all number is: ${1 + 2 + 3 + 4 + 5}`;
+let mathEquasion = document.querySelector("#equasion");
+mathEquasion.innerText = `"The mathematical equasion: (1+2+3+4+5=11)"`;
