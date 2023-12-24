@@ -10,7 +10,8 @@ function createTable() {
     const table = document.getElementById("table");
     let row = prompt("Input Row number");
     if (row != null) { let row = document.getElementById("row").value }
-    let col = prompt("Input Col number")
+    let col = prompt("Input Col number");
+    table.innerHTML = "";
     if (col != null) { let col = document.getElementById("col").value }
 
 
@@ -19,7 +20,7 @@ function createTable() {
         let tr = document.createElement("tr");
         for (let j = 0; j < col; j++) {
             let td = document.createElement("td");
-            let text = document.createTextNode(`Row: ${i} Col: ${j}`);
+            let text = document.createTextNode(`Row: ${i + 1} Col: ${j + 1}`);
             td.appendChild(text);
             tr.appendChild(td);
         }
